@@ -1,55 +1,59 @@
 
-"use strict";
+"use strict"; // Slide 51 : utiliser le mode strict.
 
-// Déclarer le tableau persons
+// Slide 40 : déclarer un tableau d'objets.
 const persons = [
     { nom: "nom-1", prenom: "prenom-1", points: 5 },
     { nom: "nom-2", prenom: "prenom-2", points: 10 },
     { nom: "nom-3", prenom: "prenom-3", points: 15 }
 ];
 
-// Déclarer et initialiser le compteur lignes
+// Slide 51 : déclarer une variable avec let et l'initialiser à 0.
 let lignes = 0;
 
 
 // Fonction doInsertRowTable
 function doInsertRowTable(num, nom, prenom, points) {
 
-    // Récupérer le tableau
-    const table = document.querySelector("#table_container tbody");
+    // Slides 61-64 : retrouver un élément HTML par son identifiant.
+    const container = document.getElementById("table_container");
 
-    // Créer une nouvelle ligne
+    // Slides 66-69 : retrouver le tbody par son nom de balise.
+    // [0] permet de récupérer le premier élément de la collection.
+    const table = container.getElementsByTagName("tbody")[0];
+
+    // Slide 104 : créer une nouvelle ligne HTML.
     const row = document.createElement("tr");
 
-    // Créer les cinq colonnes
+    // Slide 104 : créer les cinq cellules.
     const col1 = document.createElement("td");
     const col2 = document.createElement("td");
     const col3 = document.createElement("td");
     const col4 = document.createElement("td");
     const col5 = document.createElement("td");
 
-    // Remplir le contenu des colonnes
+    // Slide 91 : innerText permet d'insérer du texte simple.
     col1.innerText = num;
     col2.innerText = nom;
     col3.innerText = prenom;
     col4.innerText = points;
 
-    // Créer la checkbox
+    // Slides 104 et 107 : créer une case à cocher et définir son attribut.
     const checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
     col5.append(checkbox);
 
-    // Affecter les classes
+    // Slide 107 : affecter les classes CSS aux cellules.
     col1.setAttribute("class", "col_number");
     col2.setAttribute("class", "col_text");
     col3.setAttribute("class", "col_text");
     col4.setAttribute("class", "col_number");
     col5.setAttribute("class", "col_chkbox");
 
-    // Ajouter les colonnes à la ligne
+    // Slide 98 : ajouter les cellules à la ligne.
     row.append(col1, col2, col3, col4, col5);
 
-    // Ajouter la ligne au tableau
+    // Slide 98 : ajouter la ligne au corps du tableau.
     table.append(row);
 }
 
@@ -57,10 +61,10 @@ function doInsertRowTable(num, nom, prenom, points) {
 // Fonction doInsert
 function doInsert(nom, prenom, points) {
 
-    // Incrémenter le compteur lignes
+    // Slide 41 : incrémenter le compteur lignes.
     lignes++;
 
-    // Insérer la ligne avec son numéro
+    // Slide 45 : appeler la fonction doInsertRowTable.
     doInsertRowTable(lignes, nom, prenom, points);
 }
 
@@ -68,22 +72,22 @@ function doInsert(nom, prenom, points) {
 // Fonction init
 function init() {
 
-    // Parcourir le tableau persons
+    // Slide 44 : parcourir le tableau persons avec une boucle.
     for (const person of persons) {
 
+        // Slides 39-40 : accéder aux propriétés de chaque objet.
         doInsert(person.nom, person.prenom, person.points);
-
     }
 }
 
 
-// Appel de init()
+// Slide 45 : appeler la fonction init.
 init();
 
 
 // Fonction consoleTableau
 function consoleTableau() {
 
+    // Slide 33 : afficher le contenu dans la console.
     console.log(persons);
-
 }
