@@ -1,0 +1,32 @@
+
+#table_container {
+    width: 80%;
+    margin: auto;
+    font-family: Calibri;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0786b5;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.col_number,
+.col_chkbox {
+    text-align: center;
+}
+
+.col_text {
+    text-align: left;
+}
+

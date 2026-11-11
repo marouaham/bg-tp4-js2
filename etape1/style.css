@@ -1,0 +1,39 @@
+
+/* Mise en forme du tableau */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Calibri;
+}
+
+/* En-tête du tableau */
+th {
+    background-color: #0786b5;
+    color: white;
+    padding: 10px;
+}
+
+/* Cellules */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alignement des colonnes */
+.col_number,
+.col_chkbox {
+    text-align: center;
+}
+
+.col_text {
+    text-align: left;
+}
+
+/* Conteneur */
+#table_container {
+    width: 80%;
+    margin: auto;
+    font-family: Calibri, sans-serif;
+}
+

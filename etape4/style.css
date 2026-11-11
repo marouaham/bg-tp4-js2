@@ -1,0 +1,58 @@
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+}
+
+#table_container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0786b2;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 7px;
+}
+
+.col_number {
+    text-align: center;
+    width: 10%;
+}
+
+.col_text {
+    text-align: left;
+    width: 30%;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 10%;
+}
+
+#container_summary {
+    background-color: #eeeeee;
+    padding: 5px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container_summary p {
+    margin: 5px;
+}
+
+button {
+    margin-top: 5px;
+}
