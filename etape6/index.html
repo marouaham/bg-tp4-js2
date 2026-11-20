@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Etape 6 - Suppression</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="table_container">
+
+        <!-- Formulaire -->
+        <div id="form_container">
+
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom">
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom">
+
+            <label for="points">Points:</label>
+            <input type="number" id="points">
+
+            <button type="button" class="btn-add" onclick="doNewData()">
+                Ajouter
+            </button>
+
+        </div>
+
+        <!-- Tableau -->
+        <table>
+            <thead>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_number">Points</th>
+                    <th class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+
+            <tbody id="table_body">
+            </tbody>
+        </table>
+
+        <!-- Résumé -->
+        <div id="container_summary">
+            <p id="p1">0 ligne(s)</p>
+            <p id="p3">Totale point(s)= 0</p>
+        </div>
+
+        <!-- Boutons -->
+        <div id="container_btn">
+
+            <button type="button" class="btn-consol"
+                    onclick="consoleTableau()">
+                Console Tableau
+            </button>
+
+            <button type="button" class="btn-del"
+                    onclick="deleteRow()">
+                Supprimer
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+body {
+    font-family: Calibri, Arial, sans-serif;
+}
+
+#table_container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Formulaire */
+#form_container {
+    background-color: #eeeeee;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#form_container h3 {
+    margin-top: 0;
+}
+
+.form_group {
+    margin-bottom: 10px;
+}
+
+.form_group label {
+    display: inline-block;
+    width: 80px;
+}
+
+.form_group input {
+    padding: 7px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #0786b2;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 7px;
+}
+
+.col_number {
+    text-align: center;
+    width: 10%;
+}
+
+.col_text {
+    text-align: left;
+    width: 30%;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 10%;
+}
+
+/* Résumé */
+#container_summary {
+    background-color: #eeeeee;
+    padding: 5px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container_summary p {
+    margin: 5px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 5px 10px;
+}
