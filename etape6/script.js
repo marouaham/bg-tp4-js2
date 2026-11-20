@@ -122,7 +122,8 @@ function doNewData() {
 }
 
 
-// Supprimer les lignes sélectionnées
+//  Suppression des lignes sélectionnées (Slides 59 - 63)
+
 function deleteRow() {
 
     // Étape 1 : vérifier si le tableau est vide
